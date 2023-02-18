@@ -1,0 +1,120 @@
+:root {
+  --blue: #05a399de;
+  --dark: #01736a;
+}
+
+* {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  background-color: #c4ebf9;
+  margin: 20px 50px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 95vw;
+  height: 95vh;
+  color: #fff;
+  font-size: 30px;
+  overflow: hidden;
+}
+
+.bg {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  scale: 0.6;
+  height: 30vh;
+  animation: bounce 5s infinite linear;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(-50vh);
+  }
+  to {
+    transform: translateY(150vh);
+  }
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 100%;
+  height: 15%;
+  background: linear-gradient(
+    to top right,
+    var(--dark),
+    var(--blue),
+    transparent
+  );
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.mid-container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  height: 40vw;
+}
+
+.aside {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(143, 245, 26, 0.73);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.article {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  background: rgb(245 198 114 / 73%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.inner-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 40%;
+  margin: 30px;
+  gap: 30px;
+}
+.image {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(245, 212, 26, 0.73);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
