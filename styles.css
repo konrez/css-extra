@@ -30,7 +30,7 @@ body {
   top: 0;
   scale: 0.6;
   height: 30vh;
-  animation: bounce 5s infinite linear;
+  animation: bounce 10s infinite linear;
 }
 
 @keyframes bounce {
